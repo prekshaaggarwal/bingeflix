@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { MoodProvider } from './context/MoodContext';
 import { UserStatsProvider } from './context/UserStatsContext';
@@ -25,7 +25,7 @@ export default function App() {
   const handleSplashDone = useCallback(() => setShowSplash(false), []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <MoodProvider>
           <UserStatsProvider>
@@ -59,6 +59,6 @@ export default function App() {
           </UserStatsProvider>
         </MoodProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
