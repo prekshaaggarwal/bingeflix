@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { MoodProvider } from './context/MoodContext';
 import { UserStatsProvider } from './context/UserStatsContext';
@@ -23,9 +23,11 @@ export default function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   const handleSplashDone = useCallback(() => setShowSplash(false), []);
+  const isGitHubPages = window.location.hostname.includes('github.io');
+  const Router = isGitHubPages ? HashRouter : BrowserRouter;
 
   return (
-    <HashRouter>
+    <Router>
       <AuthProvider>
         <MoodProvider>
           <UserStatsProvider>
@@ -59,6 +61,6 @@ export default function App() {
           </UserStatsProvider>
         </MoodProvider>
       </AuthProvider>
-    </HashRouter>
+    </Router>
   );
 }
