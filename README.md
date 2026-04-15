@@ -2,6 +2,10 @@
 
 A Netflix-inspired streaming web app with intelligent personalization and gamification.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Bingeflix-red?style=for-the-badge&logo=vercel)](https://prekshaaggarwal.github.io/bingeflix/)
+
+**Live Demo:** [https://prekshaaggarwal.github.io/bingeflix/](https://prekshaaggarwal.github.io/bingeflix/)
+
 ## Tech Stack
 
 - **React 18** with Vite
