@@ -1,6 +1,14 @@
 # Bingeflix
 
-A Netflix-inspired streaming web app with intelligent personalization and gamification.
+A Netflix-inspired streaming web app engineered to feel like a real product, not just a clone. Bingeflix combines polished UI, intelligent personalization, gamified engagement, and production-style deployment practices to demonstrate both frontend craftsmanship and product thinking.
+
+## Why It Stands Out
+
+- **Product-grade experience:** cinematic splash screen, auto-rotating hero, hover-rich cards, animated modals, smooth micro-interactions, keyboard shortcuts, and mobile-first responsive navigation.
+- **Advanced personalization engine:** mood-based filtering, smart recommendation rows ("Because you watched...", "Trending for you"), surprise picker, continue watching, and recently browsed history.
+- **Gamified user journey:** badge system, watch streak tracker, watch-time stats, and profile analytics with visual genre radar.
+- **Recruiter-ready deployment:** live on Render with GitHub Pages fallback, automated CI/CD for Pages, and a shareable portfolio URL for instant review.
+- **Strong architecture choices:** Context API state separation (Auth, Mood, Stats, Browse History, Toasts), protected routes, reusable components, and local persistence for real user flows.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Bingeflix-red?style=for-the-badge&logo=render)](https://bingeflix-bc94.onrender.com)
 
